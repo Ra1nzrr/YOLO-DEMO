@@ -1,16 +1,12 @@
-# YOLOv8 Model Usage
+# YOLO DEMO
 
-This document describes three different ways to call the YOLOv8 model (`yolov8s.pt`): processing video, processing images, and processing live webcam input for face detection.
+下方将会提供三种不同的的调用YOLO V8官方的模型yolov8s.pt
 
-## Prerequisites
+## 1. 处理视频
 
-Before running any of the examples, make sure you have completed the steps mentioned in the provided PowerPoint presentation. Additionally, ensure the required media files are present in the project folder.
-
-## 1. Process Video
-
-### Requirements:
-- Complete the steps described in the PowerPoint.
-- Add a video file to the project folder and rename it as `test.mp4`.
+运行前提:
+a. 请完成ppt已描述过的步骤
+b. 需要你将项目文件夹内添加一个任意的视屏 并改名为"test.mp4"
 
 ### Code:
 ```python
@@ -56,3 +52,10 @@ while cap.isOpened():
 cap.release()
 
 print(f"Video frames processed, total {frame_count} frames.")
+```
+2. 处理照片
+
+运行前提:
+
+a. 请完成ppt已描述过的步骤
+b. 需要你将项目文件夹内添加一个任意的图片文件 并改名为"test.png"
